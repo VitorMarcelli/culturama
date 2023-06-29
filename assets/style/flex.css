@@ -13,6 +13,29 @@
    
 }
 
+.destaques{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.destaques__barra{
+    flex-grow: 1;
+}
+
+.eventos__lista{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    
+}
+
+.eventos__item{
+    flex-grow: 1;
+    max-width: 400px;
+}
+
 @media (min-width: 720px) {
 
     .menu {
@@ -23,6 +46,10 @@
         flex-wrap: wrap;
         column-gap: 1.5rem;
         row-gap: 1rem;
+    }
+
+    .eventos__lista{
+        justify-content: end;
     }
 }
 
